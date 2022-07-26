@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px auto;
+}
+
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 25px 20px 50px;
+}
+nav a {
+  text-decoration: none;
+  color: brown;
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+nav a:hover {
+  border-bottom: 5px double brown;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: orangered;
+  padding: 10px;
+}
+
+h2 {
+  padding: 10px 0;
+  color: brown;
+  border-bottom: 5px double brown;
+  margin-left: 25px;
+  width: 110px;
+}
+
+main {
+  margin-bottom: 50px;
+}
+main article p {
+  padding: 25px;
+  line-height: 25px;
+  text-indent: 15px;
+  text-align: justify;
+}
+.projects article {
+  width: 90%;
+  margin: 0 auto 50px;
+}
+.projects article,
+main form {
+  border-radius: 10px;
+  background-color: rgb(247, 213, 101);
+  box-shadow: 0 0 10px 2px burlywood;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
+  padding: 15px;
+  justify-content: space-between;
+}
+main form legend {
+  padding-bottom: 30px;
+  color: brown;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+}
+main form > * {
+  margin: 6px 0;
+}
+main form label {
+  font-family: bold;
+  font-size: 1.3rem;
+}
+main form input,
+form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid brown;
+  box-shadow: 0 0 5px 0 brown;
+}
+
+footer small p {
+  padding: 5px;
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: bold;
+  color: gray;
+}
+
+@media only screen and (min-width: 450px) {
+  nav {
+    justify-content: flex-start;
+    justify-items: center;
+    margin-left: 30px;
+  }
+  nav a {
+    margin-right: 20px;
+    font-size: 1.2rem;
+  }
+  h2 {
+    margin-left: 45px;
+  }
+  main article p {
+    line-height: 35px;
+    margin: 20px;
+  }
+
+  main form {
+    width: 75%;
+    padding: 30px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    width: 100%;
+  }
+  h1 {
+    margin: 10px 25px 20px;
+    font-size: 2rem;
+  }
+
+  nav {
+    margin-top: 30px;
+  }
+
+  nav a {
+    font-size: 1.8rem;
+  }
+  h2 {
+    margin: 0 12.5%;
+  }
+
+  main article p {
+    width: 80%;
+    margin: 10px auto;
+    line-height: 40px;
+    font-size: 1.2rem;
+  }
+  .projects article {
+    width: 70%;
+  }
+
+  main form {
+    width: 50%;
+  }
+  main form legend {
+    font-size: 1.5rem;
+  }
+
+  footer small p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 2rem;
+  }
+  main article {
+    width: 75%;
+    margin: 20px auto;
+  }
+
+  main article p {
+    font-size: 1.5rem;
+    line-height: 50px;
+  }
+  main .projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+  }
+  .projects h1 {
+    flex-basis: 100%;
+    font-size: 3rem;
+  }
+  .projects article {
+    flex-basis: 30%;
+    margin: 10px 1.65% 50px;
+  }
+  main form {
+    width: 30%;
+  }
+}
