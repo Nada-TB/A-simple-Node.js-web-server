@@ -23,7 +23,7 @@ This project demonstrates a basic Node.js web server that serves static files su
 
 ## Demo
 
-Since this project is a backend application, a live demo isn't applicable. However, you can test the server by running it locally and accessing the provided URLs in your web browser.
+live demo [here](nodejs-web-server-application.glitch.me)
 
 ## Requirements
 
