@@ -23,7 +23,7 @@ This project demonstrates a basic Node.js web server that serves static files su
 
 ## Demo
 
-live demo [here](nodejs-web-server-application.glitch.me)
+live demo [here](https://nodejs-web-server-application.glitch.me/)
 
 ## Requirements
 
